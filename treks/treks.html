@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--divinectorweb.com-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treks</title>
+    
+    <!-- All CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="#"><span class="text-warning">Travel</span>Portal</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Treks</a>
+              </li> 
+              <li class="nav-item">
+                <a class="nav-link" href="../tours/tourpackages.html">Tours</a>
+              </li> 
+              <li class="nav-item">
+                <a class="nav-link" href="../trekessentials/trekessentials.html">Trek Essentials</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Tour Recommender</a>
+              </li> 
+              <li class="nav-item">
+                <a class="nav-link" href="../travelogue/travelogue.html">Travelogue</a>
+              </li>        
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+
+    <p>&nbsp; &nbsp; &nbsp;</p>
+    <p>&nbsp; &nbsp; &nbsp;</p>
+
+    <div class="trekp-title">
+        <section><h2>Upcoming Treks</h2></section>
+    </div>
+
+ 
+
+    <style>
+
+        h2{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container1 {
+            display: flex;
+            box-sizing: border-box;
+            align-content: center;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+
+        .row {
+            
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            
+        }
+
+        .trek-updates {
+            display: flex;
+            width: 90%;
+            justify-content: space-around;
+            column-gap: 20px;
+        }
+
+        .single-trek {
+            width: 360px;
+            height: 400px;
+            padding: 24px;
+            background: #fff;
+            position: relative;
+            display: flex;
+            align-items: flex-end;
+            transition: 0.6s ease-out;
+            box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .single-trek:hover {
+            transform: translateY(25px);
+        }
+
+        .single-trek:hover:before {
+            opacity: 1;
+        }
+
+        .single-trek:hover .trek-text {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .single-trek:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: block;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to top, #000, transparent);
+            z-index: 2;
+            transition: 0.5s;
+            opacity: 0;
+        }
+
+        .single-trek img {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            object-fit: cover;
+        }
+
+        .single-trek .trek-text {
+            position:relative;
+            z-index: 3;
+            color: #fff;
+            opacity: 0;
+            transform: translateY(60px);
+            transition: 0.5s;
+        }
+
+        .trek-text p {
+            letter-spacing: 1px;
+            font-size: 15px;
+            margin-top: 8px;
+            font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+                "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        }
+
+        
+    </style>
+
+    
+    <div class="container1">
+        <div class="row">
+            <div class="trek-updates">
+                <div class="single-trek">
+                    <img src="uptrek1.jpg" alt="upcoming trek 1">
+                    <div class="trek-text">
+                        <h3>Harihar</h3>
+                        <p>Nashik, Maharashtra<br><a href="trektemp1.html">Know more</a></p>
+                    </div>
+                </div>
+        
+                <div class="single-trek">
+                    <img src="uptrek2.jpg" alt="upcoming trek 2">
+                    <div class="trek-text">
+                        <h3>Sandhan Valley</h3>
+                        <p>Pune, Maharashtra<br><a href="trektemp2.html">Know more</a></p>
+                    </div>
+                </div>
+        
+                <div class="single-trek">
+                    <img src="uptrek3.jpg" alt="upcoming trek 3">
+                    <div class="trek-text">
+                        <h3>Irshalgad</h3>
+                        <p>Karjat, Maharashtra<br><a href="trektemp3.html">Know more</a></p>
+                    </div>
+                </div>
+             </div>
+        </div>
+    </div>
+    
+    <div class="container1">
+        <div class="row">
+            <div class="trek-updates">
+                <div class="single-trek">
+                    <img src="uptrek4.jpg" alt="upcoming trek 1">
+                    <div class="trek-text">
+                        <h3>Harishchandragad</h3>
+                        <p>Ahmednagar, Maharashtra<br><a href="trektemp4.html">Know more</a></p>
+                    </div>
+                </div>
+        
+                <div class="single-trek">
+                    <img src="uptrek5.jpeg" alt="upcoming trek 2">
+                    <div class="trek-text">
+                        <h3>Kalsubai</h3>
+                        <p>Igatpuri, Maharashtra<br><a href="trektemp5.html">Know more</a></p>
+                    </div>
+                </div>
+        
+                <div class="single-trek">
+                    <img src="uptrek6.jpg" alt="upcoming trek 3">
+                    <div class="trek-text">
+                        <h3>Salher</h3>
+                        <p>Nashik, Maharashtra<br><a href="trektemp6.html">Know more</a></p>
+                    </div>
+                </div>
+             </div>
+        </div>
+    </div>
+    
+
+    <!-- footer starts -->
+      <footer class="bg-dark m-3 p-3 text-center">
+          <div class="container">
+              <p class="text-white">All Right Reserved By @TreksbyAR</p>
+          </div>
+      </footer>
+    <!-- footer ends -->
+
+
+    <!-- All Js -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+</html>
+
+
+
+
+<!--for getting the form download the code from download button-->
